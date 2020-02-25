@@ -1,0 +1,185 @@
+body {
+  color: #333;
+  font-family: Open Sans;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 1020px;
+}
+
+h1 {
+  font-weight: 400;
+  margin: 0;
+  width:40%;
+}
+
+.codebar-link {
+  color: #4bafff;
+}
+
+.header-logo {
+  background: url('https://bebanjo.com/media/logo-bebanjo.svg') no-repeat;
+  background-size: 200px 40px;
+  display: inline-block;
+  height: 38px;
+  width:63px;
+}
+
+.header-name {
+  font-style: italic;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.menu {
+  align-items: center;
+  display: flex; 
+  justify-content: flex-end;
+  width: 60%;
+}
+
+.menu-item {
+  color: #333;
+  text-decoration: none;
+}
+
+.menu-item:not(.conclusion) {
+  padding-right: 32px;
+}
+
+.menu-item:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+.menu-item i {
+  border: solid #ccc;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  margin-left: 6px;
+  margin-top: 4px;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  vertical-align: top;
+}
+
+.section-wrapper {
+  background: #F6F6F6;
+  padding: 64px 20px 20px;
+}
+
+.section-wrapper section {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end; 
+  line-height: 32px;
+  margin: 0 auto;
+  padding-bottom: 64px; 
+  width: 1020px;
+}
+
+.section-logo.about-me {
+  background: url('https://bebanjo.com/media/logo-movida.svg') no-repeat;
+  background-size:100px 100px;
+  height: 100px;
+  width:800px;
+}
+
+.section-logo.why-bebanjo {
+  background: url('https://bebanjo.com/media/logo-metadata.svg') no-repeat;
+  background-size:100px 100px;
+  height: 100px;
+  width:660px
+}
+
+.section-logo.interests {
+  background: url('https://bebanjo.com/media/logo-sequence.svg') no-repeat;
+  background-size:100px 100px;
+  height: 100px;
+  width:400px
+}
+
+.section-logo.conclusion {
+  background: url('https://bebanjo.com/media/logo-reporter.svg') no-repeat;
+  background-size:100px 100px;
+  height: 100px;
+  margin-left: 28px;
+  width:540px;
+}
+
+.section-title {
+  display: inline;
+  margin-right: 4px;
+  padding: 4px 6px;
+  font-weight: 700;
+}
+
+.section-title.about-me {
+  background: #FFA64D;
+}
+
+.section-title.why-bebanjo {
+  background: #FF90C0; 
+}
+
+.section-title.interests {
+  background: #56D281;
+}
+
+.section-title.conclusion {
+  background: #59C2FF;
+}
+
+.red {
+  color: #e00770;
+}
+
+footer {
+  background: #13141D;
+  color: #fff;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-item {
+  padding-bottom: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 20px 14px;
+    width: unset;
+  }
+  
+  h1 {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .menu {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .menu-item i {
+    display: none;
+  }
+  
+  .section-wrapper section {
+    width: unset;
+  }
+  
+  .section-logo {
+    display: none;
+  }
+}
